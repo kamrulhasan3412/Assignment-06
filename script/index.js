@@ -81,7 +81,7 @@ const displayLevelTree = (trees) => {
                 <img
                   src="${tree.image}"
                   alt=""
-                  class="rounded-xl h-[190px] w-full"
+                  class="rounded-xl h-[190px] w-full object-cover"
                 />
               </figure>
               <div class="items-center text-center ">
@@ -178,7 +178,7 @@ const displayDetails = (detailsTree) => {
       <img
         src="${detailsTree.image}"
         alt=""
-        class="rounded-xl h-[190px] w-full"
+        class="rounded-xl h-[190px] w-full object-cover"
       />
     </figure>
     <p class="text-[12px] text-left opacity-80 text-[#1f2937] my-2">

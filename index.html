@@ -107,7 +107,67 @@
         </div>
       </section>
 
+      <!-- tree choosing section starts here -->
+      <section class="bg-[#F0FDF4]">
+        <div>
+          <h2
+            class="text-center text-3xl font-semibold text-[#1f2937] mb-10 pt-24"
+          >
+            Choose Your Trees
+          </h2>
+          <div
+            class="parent_div w-11/12 mx-auto grid grid-cols-1 md:grid-cols-5 gap-5"
+          >
+            <div class="left_div md:col-span-1 mb-5 md:mb-0">
+              <h2 class="text-xl font-semibold pb-4">Categories</h2>
+              <div id="category-container"></div>
+            </div>
+
+            <div class="parent_card_div md:col-span-3">
+              <div
+                id="loading-spinner"
+                class="min-h-screen flex flex-col items-center hidden"
+              >
+                <span class="loading loading-dots loading-xl"></span>
+              </div>
+              <div
+                id="tree-container"
+                class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-7"
+              >
+                <div id="default-container" class="default_div"></div>
+              </div>
+            </div>
+
+            <div
+              class="right_div bg-white p-4 rounded-2xl md:col-span-1 mt-5 md:mt-0"
+            >
+              <h3 class="text-[20px] font-semibold text-[#000000] mb-2">
+                Your Cart
+              </h3>
+              <div id="add-to-cart"></div>
+              <h3 class="flex justify-between items-center">
+                <span class="font-medium text-[#1f2937] mt-2">Total: </span>
+                <p>৳<span id="cart-total" class="mt-2">0</span></p>
+              </h3>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section></section>
     </main>
   </body>
+
+  <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+    <div class="modal-box">
+      <div id="details-container"></div>
+      <div class="modal-action">
+        <form method="dialog">
+          <button class="btn">Close</button>
+        </form>
+      </div>
+    </div>
+  </dialog>
+
+  <script src="./script/index.js"></script>
 </html>
